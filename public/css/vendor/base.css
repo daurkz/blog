@@ -1,4 +1,48 @@
+body {
+background-color: #f5f5f5;
+}
+
 .base_width {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.base_right_left_padding {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.page {
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Sign Form styles */
+
+.sign_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_form > input {
+    display: block;
+    border: 1px solid #E7E7E7;
+    margin-bottom: 10px;
+    padding: 0 15px;
+
+    width: 300px;
+    height: 35px;
+    border-radius: 7px;
+}
+
+.sign_form > button {
+    width: 300px;
+    height: 35px;
+    background-color: #00A2DC;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 7px;
 }

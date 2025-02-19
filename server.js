@@ -3,13 +3,22 @@ const path = require('path')
 
 
 const app = express();
-const PORT = 3030;
+const PORT = 9030;
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
     res.status(200).render('home')
 })
+
+app.get('/signup', (req, res) => {
+    res.status(200).render('signup')
+})
+
+app.get('/signin', (req, res) => {
+    res.status(200).render('signin')
+})
+
 
 app.listen(PORT, () => {
     console.log(`

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', {title: 'Sign'}) %>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <div class="page sign_page base_width">
+        <form class="sign_form">
+            <input type="email" placeholder="E-mail" name="email">
+            <input type="full_name" placeholder="Full Name" name="user_name">
+            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Password" name="re_password">
+            <button>Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
