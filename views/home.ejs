@@ -3,8 +3,16 @@
 <%- include('./partials/head.ejs', {title: 'Home'}) %>
 <body>
     <%- include('./partials/header.ejs') %>
-    <div class="page base_width">
-        <%- include('./partials/postItem.ejs') %>
+    <div class="page home_page base_width">
+        <div class="post_list">
+            <div class="section_header">
+                <h1>Блоги по программированию</h1>
+                <p>Популярные и лучшие публикации по программированию для начинающих и профессиональных программистов и IT-специалистов.</p>
+            </div>
+            <%- include('./partials/postItem.ejs') %>
+        </div>
+        <div class="side_bar">
+        </div>
     </div>
 </body>
 </html>
